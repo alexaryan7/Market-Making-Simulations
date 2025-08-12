@@ -23,10 +23,6 @@ Market-making is a trading approach that provides liquidity by continuously quot
 ├── README.md # This file
 ├── requirements.txt # Dependencies
 
-yaml
-Copy
-Edit
-
 ---
 
 ## Strategies Implemented
