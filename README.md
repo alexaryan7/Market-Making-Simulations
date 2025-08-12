@@ -122,7 +122,7 @@ python
 Copy
 Edit
 ticker = "AAPL"
-start_date = "2023-06-01"
-end_date = "2023-06-05"
+START_DATE = "2025-07-15"
+END_DATE = "2025-07-25"
 
 Then run:
