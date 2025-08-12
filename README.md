@@ -34,12 +34,6 @@ A simple baseline strategy:
 - **Pros:** Easy to implement, works well in stable, mean-reverting markets.
 - **Cons:** No inventory control — vulnerable to trending markets.
 
-**Formula:**
-\[
-\text{Bid} = \text{mid} - \frac{\text{spread}}{2}, \quad
-\text{Ask} = \text{mid} + \frac{\text{spread}}{2}
-\]
-
 ---
 
 ### 2. Inventory-Aware Market Maker (InventoryAwareMM)
@@ -50,16 +44,6 @@ An enhanced strategy that adjusts quotes based on current inventory:
 - **Pros:** Controls position risk, more robust to trends.
 - **Cons:** Parameter tuning required for `risk_aversion`.
 
-**Formula:**
-\[
-\text{Skew} = \text{risk\_aversion} \times \text{inventory}
-\]
-\[
-\text{Bid} = \text{mid} - \frac{\text{spread}}{2} - \text{Skew}
-\]
-\[
-\text{Ask} = \text{mid} + \frac{\text{spread}}{2} - \text{Skew}
-\]
 
 ---
 
@@ -140,9 +124,5 @@ Edit
 ticker = "AAPL"
 start_date = "2023-06-01"
 end_date = "2023-06-05"
-Then run:
 
-bash
-Copy
-Edit
-jupyter notebook market_making_real.ipynb
+Then run:
